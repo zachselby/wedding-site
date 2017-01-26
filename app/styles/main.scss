@@ -221,7 +221,7 @@ header h2 {
     width: 71px; height: 62px;
     position: absolute;
     top: 3px; left: -20%;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 #faq dt:hover:before {
@@ -284,9 +284,11 @@ footer img {display: block; width: 85%; margin: 10px auto;}
    Media Queries
    ========================================================================== */
 
+@media only screen and (max-width: 1093px) {
+    #faq dt:before {opacity: 1}
+}
+
 @media only screen and (max-width: 1000px) {
-    #countdown {
-    }
     #countdown figure {font-size: 3.5em;}
     #countdown img {top: 190px;}
     #arrow {display: none !important;}
