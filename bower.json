@@ -5,7 +5,6 @@
     "jquery": "~2.1.1",
     "modernizr": "~2.8.1",
     "jquery-lazy": "^1.7.4",
-    "compass-sass-mixins": "*",
     "csswarp.0.7.min": "https://raw.githubusercontent.com/dirkweber/csswarp.js/master/minified/csswarp.0.7.min.js",
     "Arctext.js": "arctext-js#*"
   },
