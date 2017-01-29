@@ -85,7 +85,7 @@ header h2 {
 */
 
 #hero {
-    width: 85%;
+    width: 95%;
     display: block;
     margin: auto
 }
@@ -149,6 +149,15 @@ header h2 {
     100% {-webkit-transform: translateX(0%);}            
 }
 
+.divider {
+    margin: 65px 0;
+    text-align: center;
+}
+
+.divider img {
+    width: 180px;
+}
+
 #reception {position: relative;}
 
 #reception p {
@@ -185,6 +194,7 @@ header h2 {
 
 #rsvp {
     text-align: center;
+    margin: 0 auto 50px;
 }
 
 #rsvp .desktop {display: block;}
@@ -193,11 +203,12 @@ header h2 {
 #rsvp iframe {
     max-width: 760px;
     height: 1480px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
 }
 
 #faq {
-    margin: 0 0 100px;
+    margin: 0 auto;
+    padding-left: 20px;
 }
 
 #faq dl {
@@ -300,6 +311,7 @@ footer div.copy {margin: 160px 0 0; font-size: 1em; font-family: 'Courier New', 
     #arrow {display: none !important;}
     #rsvp .desktop {display: none;}
     #rsvp .mobile {display: block;}
+    #registry {min-height:0; padding: 0; background: none;}
 
 }
 
@@ -318,7 +330,9 @@ footer div.copy {margin: 160px 0 0; font-size: 1em; font-family: 'Courier New', 
 
 @media only screen and (max-width: 767px) {
     body {font-size: 12px; padding-top: 80px;}
-    #registry {min-height:0; padding: 0; background: none;}
+    .divider img {
+        width: 150px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -388,14 +402,18 @@ footer div.copy {margin: 160px 0 0; font-size: 1em; font-family: 'Courier New', 
 
 @media only screen and (max-width: 450px) {
     #countdown figcaption {
-        margin: 0px 0 0 -7px;
-        position: static;
+        margin: 0px 5px;
+        line-height: 2.8em;
     }
     #countdown div {width: 100%; text-align: center;}
     #countdown img {right: auto; left: 30%;}
     #faq h2 {font-size: 3.5em;}
     #faq dl {width: 100%; padding: 0;}
     #faq dt:before {display: none;}
+    #faq {padding: 0;}
+    .divider img {
+        width: 130px;
+    }
 }
 
 /* ==========================================================================
